@@ -72,3 +72,4 @@ assets/
 html/
 dist/
 .idea/
+package-lock.json
