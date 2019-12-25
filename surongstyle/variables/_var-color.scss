@@ -1,0 +1,33 @@
+/*! --------------------------------------- *\
+ *  VARIABLES - COLORS
+ * ---------------------------------------- */
+ $color-list: (
+    background: (
+        normal: #f5f8fb,
+        faded: lighten(#f5f8fb, .7%), // --background-normal
+        dark: rgba(#55677a, .5) // --color-neutral-6 .5
+    ),
+    primary: (
+        1: #e7eef5,
+        2: #c1d6eb,
+        3: #83b2e1,
+        4: #1e7cda,
+        5: #0c58a4,
+        6: #023466,
+        faded: rgba(#1e7cda, .5), // --color-primary-4 .5
+    ),
+    neutral: (
+        1: #f0f3f5,
+        2: #e9ecf0,
+        3: #c6d0d8,
+        4: #a8b5bf,
+        5: #7d8d9c,
+        6: #55677a,
+        7: #30435a,
+        faded-1: rgba(0, 0, 0, .075),
+        faded-2: rgba(0, 0, 0, .1),
+        faded-3: rgba(0, 0, 0, .2),
+        white-faded: rgba(#fff, .5),
+    ),
+ 
+);
