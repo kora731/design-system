@@ -3,9 +3,9 @@
  * ---------------------------------------- */
  $color-list: (
     background: (
-        normal: #f5f8fb,
+        light: #f5f8fb,
         faded: lighten(#f5f8fb, .7%), // --background-normal
-        dark: rgba(#55677a, .5) // --color-neutral-6 .5
+        dark: #33344E // --color-neutral-6 .5
     ),
     primary: (
         1: #e7eef5,

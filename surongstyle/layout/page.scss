@@ -1,0 +1,17 @@
+@import "../utilities/package";
+@import "../global";
+
+.page {
+    padding: 2em 4em;
+    
+    &--light {
+        background: map($color-list, background, light);
+        color: map($color-list, neutral, 7);
+    }
+    &--dark {
+        background: map($color-list, background, dark);
+        color: map($color-list, neutral, 1);
+    }
+}
+
+

@@ -1,0 +1,21 @@
+@import "../utilities/package";
+@import "../global";
+
+.navbar{
+    display: flex;
+    align-items: baseline;
+    
+    h1
+    {
+        flex: 1;
+    }
+
+    &-menu
+    {
+        list-style-type: none;
+        li{
+            display: inline-block;
+            padding: 1rem;
+        }
+    }
+}

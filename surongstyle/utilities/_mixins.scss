@@ -1,0 +1,16 @@
+// generate native css variable rule
+@mixin css-var($var, $value) {
+  $var: "--" + $var;
+  #{$var}: $value;
+}
+
+// generate nativ css variable list
+@mixin css-var-list($name, $list) {
+  @each $var, $value in $list {
+    @if (type-of($value) == map) {
+      @include css-var-list($name + "-" + $var, $value);
+    } @else {
+      @include css-var($name + "-" + $var, $value);
+    }
+  }
+}
