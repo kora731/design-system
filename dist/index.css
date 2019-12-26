@@ -1,0 +1,36 @@
+html {
+  font-family: "Rubik", -apple-system, Arial, sans-serif;
+  font-size: 32px;
+}
+
+.sr-page {
+  padding: 2em 4em;
+}
+
+.sr-page--light {
+  background: #f5f8fb;
+  color: #30435a;
+}
+
+.sr-page--dark {
+  background: #33344E;
+  color: #f0f3f5;
+}
+
+.sr-navbar {
+  display: flex;
+  align-items: baseline;
+}
+
+.sr-navbar h1 {
+  flex: 1;
+}
+
+.sr-navbar-menu {
+  list-style-type: none;
+}
+
+.sr-navbar-menu li {
+  display: inline-block;
+  padding: 1rem;
+}

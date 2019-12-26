@@ -70,6 +70,5 @@ yarn-error.log
 
 assets/
 html/
-dist/
 .idea/
 package-lock.json

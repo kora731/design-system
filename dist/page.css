@@ -1,0 +1,13 @@
+.sr-page {
+  padding: 2em 4em;
+}
+
+.sr-page--light {
+  background: #f5f8fb;
+  color: #30435a;
+}
+
+.sr-page--dark {
+  background: #33344E;
+  color: #f0f3f5;
+}

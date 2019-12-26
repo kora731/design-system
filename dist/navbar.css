@@ -1,0 +1,17 @@
+.sr-navbar {
+  display: flex;
+  align-items: baseline;
+}
+
+.sr-navbar h1 {
+  flex: 1;
+}
+
+.sr-navbar-menu {
+  list-style-type: none;
+}
+
+.sr-navbar-menu li {
+  display: inline-block;
+  padding: 1rem;
+}
