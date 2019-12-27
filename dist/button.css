@@ -1,0 +1,38 @@
+.sr-button {
+  font-size: 24px;
+  color: var(--color-neutral-5);
+  background: transparent;
+  line-height: 1.5rem;
+  border: 0.0625rem solid transparent;
+  padding: 1rem 4rem;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.sr-button:hover {
+  color: #55677a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sr-button:active {
+  color: #55677a;
+  opacity: 1;
+  transform: translateY(0.125rem);
+}
+
+.sr-button--primary {
+  color: #fff;
+  background: #2ecce2;
+  border-color: transparent;
+}
+
+.sr-button--primary:hover {
+  color: #fff;
+  background: #00aec3;
+}
+
+.sr-button--primary:active {
+  background: #2ecce2;
+}

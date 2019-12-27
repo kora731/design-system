@@ -1,10 +1,10 @@
 html {
   font-family: "Rubik", -apple-system, Arial, sans-serif;
-  font-size: 32px;
+  font-size: 16px;
 }
 
 .sr-page {
-  padding: 2em 4em;
+  padding: 2rem 2rem;
 }
 
 .sr-page--light {
@@ -20,17 +20,90 @@ html {
 .sr-navbar {
   display: flex;
   align-items: baseline;
+  margin: 0 4rem;
 }
 
 .sr-navbar h1 {
   flex: 1;
+  font-size: 40px;
 }
 
-.sr-navbar-menu {
+.sr-navbar ul {
   list-style-type: none;
 }
 
-.sr-navbar-menu li {
+.sr-navbar ul li {
   display: inline-block;
   padding: 1rem;
+}
+
+.sr-card {
+  display: flex;
+  padding: 4rem;
+}
+
+.sr-card--light {
+  background: #e9ecf0;
+}
+
+.sr-card__content {
+  width: 60%;
+  padding-right: 4rem;
+  display: block;
+}
+
+.sr-card__content * {
+  font-size: 20px;
+}
+
+.sr-card__content *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.sr-card__content__title {
+  font-size: 32px;
+}
+
+.sr-card__image {
+  width: 40%;
+  display: block;
+}
+
+.sr-button {
+  font-size: 24px;
+  color: var(--color-neutral-5);
+  background: transparent;
+  line-height: 1.5rem;
+  border: 0.0625rem solid transparent;
+  padding: 1rem 4rem;
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.sr-button:hover {
+  color: #55677a;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sr-button:active {
+  color: #55677a;
+  opacity: 1;
+  transform: translateY(0.125rem);
+}
+
+.sr-button--primary {
+  color: #fff;
+  background: #2ecce2;
+  border-color: transparent;
+}
+
+.sr-button--primary:hover {
+  color: #fff;
+  background: #00aec3;
+}
+
+.sr-button--primary:active {
+  background: #2ecce2;
 }

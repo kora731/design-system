@@ -1,17 +1,19 @@
 .sr-navbar {
   display: flex;
   align-items: baseline;
+  margin: 0 4rem;
 }
 
 .sr-navbar h1 {
   flex: 1;
+  font-size: 40px;
 }
 
-.sr-navbar-menu {
+.sr-navbar ul {
   list-style-type: none;
 }
 
-.sr-navbar-menu li {
+.sr-navbar ul li {
   display: inline-block;
   padding: 1rem;
 }

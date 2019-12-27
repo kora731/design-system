@@ -1,17 +1,16 @@
 $color-list: (
     background: (
         light: #f5f8fb,
-        faded: lighten(#f5f8fb, .7%), // --background-normal
-        dark: #33344E // --color-neutral-6 .5
+        dark: #33344E
     ),
     primary: (
-        1: #e7eef5,
-        2: #c1d6eb,
-        3: #83b2e1,
-        4: #1e7cda,
-        5: #0c58a4,
-        6: #023466,
-        faded: rgba(#1e7cda, .5), // --color-primary-4 .5
+        1: #edf8fa,
+        2: #d2f3f9,
+        3: #b7eff7,
+        4: #82e4f3,
+        5: #2ecce2,
+        6: #00aec3,
+        faded: rgba(#82e4f3, .5), // --color-primary-4 .5
     ),
     neutral: (
         1: #f0f3f5,
@@ -25,6 +24,5 @@ $color-list: (
         faded-2: rgba(0, 0, 0, .1),
         faded-3: rgba(0, 0, 0, .2),
         white-faded: rgba(#fff, .5),
-    ),
- 
+    )
 );

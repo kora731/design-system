@@ -1,0 +1,31 @@
+.sr-card {
+  display: flex;
+  padding: 4rem;
+}
+
+.sr-card--light {
+  background: #e9ecf0;
+}
+
+.sr-card__content {
+  width: 60%;
+  padding-right: 4rem;
+  display: block;
+}
+
+.sr-card__content * {
+  font-size: 20px;
+}
+
+.sr-card__content *:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.sr-card__content__title {
+  font-size: 32px;
+}
+
+.sr-card__image {
+  width: 40%;
+  display: block;
+}

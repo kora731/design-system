@@ -18,3 +18,7 @@
     }
     @return $get;
   }
+
+@function rem($size) {
+  @return ($size * 1 / $base-size) + 0 + rem;
+}

@@ -1,0 +1,44 @@
+@import "../utilities/package";
+
+.button {
+    font-size: 1.5 * $base-size;
+    color: var(--color-neutral-5);
+    background: transparent;
+    line-height: 1.5rem;
+    border: rem(1px) solid transparent;
+    padding: rem($base-size) 4rem;
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+
+    &:hover {
+        color: map($color-list, neutral, 6);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    &:active {
+        color: map($color-list, neutral, 6);
+        opacity: 1;
+        transform: translateY(rem(2px));
+    }
+
+    &--primary {
+        color: #fff;
+        background: map($color-list, primary, 5);
+        border-color: transparent;
+
+        &:hover {
+            color: #fff;
+            background: map($color-list, primary, 6);
+        }
+
+
+        &:active {
+            background: map($color-list, primary, 5);
+        }
+
+    }
+
+}
