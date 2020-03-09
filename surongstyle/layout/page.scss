@@ -1,8 +1,11 @@
 @import "../utilities/package";
 
 .page {
-    padding: 2rem 2rem;
-    
+    padding: 0 2rem;
+    height: 100vh;
+    max-width: 80rem;
+    overflow-y: auto;
+
     &--light {
         background: map($color-list, background, light);
         color: map($color-list, neutral, 7);

@@ -3,8 +3,17 @@ html {
   font-size: 16px;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
 .sr-page {
-  padding: 2rem 2rem;
+  padding: 0 2rem;
+  height: 100vh;
+  max-width: 80rem;
+  overflow-y: auto;
 }
 
 .sr-page--light {
@@ -39,32 +48,65 @@ html {
 
 .sr-card {
   display: flex;
-  padding: 4rem;
+  flex-direction: column;
+  padding: 2rem 4rem;
+  margin: 2rem;
 }
 
 .sr-card--light {
   background: #e9ecf0;
 }
 
-.sr-card__content {
+.sr-card--dark {
+  background: #33344E;
+}
+
+.sr-card__header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.sr-card__header__title {
+  font-size: 32px;
+}
+
+.sr-card__body {
+  display: flex;
+  align-items: center;
+}
+
+.sr-card__body__content {
   width: 60%;
   padding-right: 4rem;
   display: block;
 }
 
-.sr-card__content * {
+.sr-card__body__content__desc {
   font-size: 20px;
-}
-
-.sr-card__content *:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.sr-card__content__title {
+.sr-card__body__content__title {
   font-size: 32px;
+  margin-bottom: 4rem;
 }
 
-.sr-card__image {
+.sr-card__body__content__subitle {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.sr-card__body__content__subitle__primary {
+  color: #2ecce2;
+}
+
+.sr-card__body__icon {
+  width: 120px;
+  margin: 2rem;
+  display: block;
+}
+
+.sr-card__body__image {
   width: 40%;
   display: block;
 }

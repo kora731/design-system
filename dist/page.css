@@ -1,5 +1,8 @@
 .sr-page {
-  padding: 2rem 2rem;
+  padding: 0 2rem;
+  height: 100vh;
+  max-width: 80rem;
+  overflow-y: auto;
 }
 
 .sr-page--light {
