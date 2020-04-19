@@ -1,62 +1,100 @@
 @import "../utilities/package";
 
 .card {
-    display: flex;
-    flex-direction: column;;
-    padding: 2rem 4rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  align-items: center;
+
+  @media (min-width: 1200px) {
     margin: 2rem;
+    padding: 2rem 4rem;
+    &--type1 {
+      grid-template-columns: 1fr 0.5fr;
+    }
+    &--type3 {
+      grid-template-columns: 0.5fr 1fr;
+    }
+  }
 
-    &--light {
-        background: map($color-list, neutral, 2);
+  &--light {
+    background: map($color-list, neutral, 2);
+  }
+
+  &--dark {
+    background: map($color-list, background, dark);
+  }
+
+  &__header {
+    &--type3 {
+      grid-column: span 2;
     }
 
-    &--dark {
-        background: map($color-list, background, dark);
+    &--center {
+      text-align: center;
     }
-    &__header {
-        display: flex;
-        margin-bottom: 2rem;
-        &__title {
-            font-size: 2 * $base-size;
-        }
+    margin-bottom: 2rem;
+    font-size: 2 * $base-size;
+    font-weight: bold;
+  }
+
+  &__content {
+    width: 100%;
+    &--type1, &--type2 {
+      grid-row: 2;
     }
 
-    &__body {
-        display: flex;
-        align-items: center;
+    &--type3 {
+      grid-row: 3;
+    }
+    @media (min-width: 1200px) {
+      &--type1, &--type2 {
+        grid-row: 1;
+      }
 
-        &__content {
-            width: 60%;
-            padding-right: 4rem;
-            display: block;
-            &__desc {
-                font-size: 1.25 * $base-size;
-                margin-bottom: 2rem;
-            }
+      &--type3 {
+        grid-row: 2;
+      }
+    }
+
+    &__desc {
+      font-size: 1.25 * $base-size;
+      margin-bottom: 2rem;
+    }
     
-            &__title {
-                font-size: 2 * $base-size;
-                margin-bottom: 4rem;
-            }
-
-            &__subitle {
-                &__primary {
-                    color: map($color-list, primary, 5);
-                }
-                font-size: $base-size;
-                margin-bottom: 1rem;
-            }
-        }
-    
-        &__icon {
-            width: 120px;
-            margin: 2rem;
-            display: block;
-        }
-
-        &__image {
-            width: 40%;
-            display: block;
-        }
+    &__subitle {
+      &__primary {
+          color: map($color-list, primary, 5);
+      }
+      font-size: $base-size;
+      margin-bottom: 1rem;
     }
+  }
+
+  &__icon {
+    width: 100%;
+
+    &--type3 {
+      grid-row: 1;
+    }
+    @media (min-width: 1200px) {
+      &--type3 {
+        grid-row: 2;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    &--type1, &--type2 {
+      grid-column: 1;
+    }
+    @media (min-width: 1200px) {
+      &--type1, &--type2 {
+        grid-column: 2;
+      }
+    }
+  }
 }

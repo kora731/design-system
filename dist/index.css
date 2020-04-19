@@ -47,10 +47,25 @@ body {
 }
 
 .sr-card {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 4rem;
-  margin: 2rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .sr-card {
+    margin: 2rem;
+    padding: 2rem 4rem;
+  }
+  .sr-card--type1 {
+    grid-template-columns: 1fr 0.5fr;
+  }
+  .sr-card--type3 {
+    grid-template-columns: 0.5fr 1fr;
+  }
 }
 
 .sr-card--light {
@@ -62,53 +77,80 @@ body {
 }
 
 .sr-card__header {
-  display: flex;
   margin-bottom: 2rem;
-}
-
-.sr-card__header__title {
   font-size: 32px;
+  font-weight: bold;
 }
 
-.sr-card__body {
-  display: flex;
-  align-items: center;
+.sr-card__header--type3 {
+  grid-column: span 2;
 }
 
-.sr-card__body__content {
-  width: 60%;
-  padding-right: 4rem;
-  display: block;
+.sr-card__header--center {
+  text-align: center;
 }
 
-.sr-card__body__content__desc {
+.sr-card__content {
+  width: 100%;
+}
+
+.sr-card__content--type1, .sr-card__content--type2 {
+  grid-row: 2;
+}
+
+.sr-card__content--type3 {
+  grid-row: 3;
+}
+
+@media (min-width: 1200px) {
+  .sr-card__content--type1, .sr-card__content--type2 {
+    grid-row: 1;
+  }
+  .sr-card__content--type3 {
+    grid-row: 2;
+  }
+}
+
+.sr-card__content__desc {
   font-size: 20px;
   margin-bottom: 2rem;
 }
 
-.sr-card__body__content__title {
-  font-size: 32px;
-  margin-bottom: 4rem;
-}
-
-.sr-card__body__content__subitle {
+.sr-card__content__subitle {
   font-size: 16px;
   margin-bottom: 1rem;
 }
 
-.sr-card__body__content__subitle__primary {
+.sr-card__content__subitle__primary {
   color: #2ecce2;
 }
 
-.sr-card__body__icon {
-  width: 120px;
-  margin: 2rem;
-  display: block;
+.sr-card__icon {
+  width: 100%;
 }
 
-.sr-card__body__image {
-  width: 40%;
-  display: block;
+.sr-card__icon--type3 {
+  grid-row: 1;
+}
+
+@media (min-width: 1200px) {
+  .sr-card__icon--type3 {
+    grid-row: 2;
+  }
+}
+
+.sr-card__image {
+  width: 100%;
+}
+
+.sr-card__image--type1, .sr-card__image--type2 {
+  grid-column: 1;
+}
+
+@media (min-width: 1200px) {
+  .sr-card__image--type1, .sr-card__image--type2 {
+    grid-column: 2;
+  }
 }
 
 .sr-button {
